@@ -59,16 +59,21 @@
   top:232px;
   width:391px;
 }
-.pg-button {
+.cell-47 > a {
+  line-height:46px;
+}
+.cell-47 {
   background-color:#FFFFFF;
+  border-color:#DBDBDB;
   border-radius:50px;
+  border-width:0px;
   color:#FF6D00;
-  font-family:'Roboto', sans-serif;
+  font-family:'Jeju Gothic', serif;
   font-size:18px;
-  font-weight:700;
   height:46px;
-  left:517px;
-  top:397px;
+  left:514px;
+  text-align:center;
+  top:364px;
   width:158px;
 }
 .box-29 {

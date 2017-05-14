@@ -24,18 +24,15 @@
 .page-content {
   background-color:#FFFFFF;
 }
-.section {
-  height:720px;
-}
 .box {
   border-color:#B6B6B6;
   border-width:1px;
+  float:none;
   height:197px;
-  left:0px;
   margin-left:auto;
   margin-right:auto;
-  right:0px;
-  top:89px;
+  margin-top:94px;
+  position:relative;
   width:1000px;
 }
 .text-39 {
@@ -78,56 +75,22 @@
   top:73px;
   width:126px;
 }
-.box-43 {
-  border-bottom-color:#B6B6B6;
-  border-bottom-width:1px;
-  border-left-width:0px;
-  border-right-width:0px;
-  border-top-width:0px;
-  height:81px;
-  left:12px;
-  top:305px;
-  width:1000px;
+.collection {
+  float:none;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:7px;
+  position:relative;
+  width:1024px;
 }
-.text-44 {
-  font-family:'Jeju Gothic', serif;
-  font-size:21px;
-  font-weight:700;
-  height:33px;
-  left:22px;
-  top:22px;
-  width:62px;
+.import {
+  height:100px;
+  width:1024px;
 }
-.text-45 {
-  font-family:'Jeju Gothic', serif;
-  font-size:14px;
-  font-weight:400;
-  height:33px;
-  left:106px;
-  top:27px;
-  width:87px;
-}
-.text-46 {
-  color:#6D6D6D;
-  font-family:'Jeju Gothic', serif;
-  font-size:12px;
-  font-weight:400;
-  height:49px;
-  left:655px;
-  top:23px;
-  width:140px;
-}
-.pg-button-46 {
-  background-color:#FFFFFF;
-  border-radius:50px;
-  color:#FF6D00;
-  font-family:'Jeju Gothic', serif;
-  font-size:14px;
-  font-weight:400;
-  height:45px;
-  left:808px;
-  top:22px;
-  width:126px;
+.import-59 {
+  height:100px;
+  width:1024px;
 }
 .footer {
   height:120px;

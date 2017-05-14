@@ -14,6 +14,7 @@
     <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
     <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/static/project/main.js"></script>
     <!--[if lt IE 9]>
       <script>
         document.createElement("header" );
@@ -45,7 +46,7 @@
             </div>
             <form class="iu-pg-form form_createClass pg-form" enctype="multipart/form-data" action="javascript:" method="post">
               {% csrf_token %}
-              <input class="iu-pg-text-field input input_className pg-text-field" type="email" name="className" placeholder="교실명">
+              <input class="iu-pg-text-field input input_className pg-text-field" type="text" name="className" placeholder="교실명">
               <input class="iu-pg-text-field input input_classInfo pg-text-field-25" type="text" name="classInfo" placeholder="교실 설명">
               <input class="iu-pg-button btn_createClass pg-button" type="submit" value="만들기">
               <input class="iu-pg-button btn_cancel pg-button-42" type="button" value="취소">

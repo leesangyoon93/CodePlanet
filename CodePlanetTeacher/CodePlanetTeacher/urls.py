@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.views.generic import TemplateView
 
-from mains.views import Signup, Login, CheckEmail
+from mains.views import Signup, Login, CheckEmail, CreateClass, TeacherClass, DetailClassRoom
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,9 +26,11 @@ urlpatterns = [
     url(r'^content$', TemplateView.as_view(template_name="pages/content.html")),
     url(r'^FAQ$', TemplateView.as_view(template_name="pages/FAQ.html")),
     url(r'^after_login$', TemplateView.as_view(template_name="pages/teacher_after_login.html")),
+    url(r'^teacher_class', TeacherClass),
     url(r'^create_class$', TemplateView.as_view(template_name="pages/teacher_create_class.html")),
-    url(r'^created_class$', TemplateView.as_view(template_name="pages/teacher_created_class.html")),
+    url(r'^detail_class', DetailClassRoom),
     url(r'^signup$', Signup),
     url(r'^login$', Login),
     url(r'^checkEmail', CheckEmail),
+    url(r'^createClass', CreateClass),
 ]

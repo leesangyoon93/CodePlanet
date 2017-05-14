@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import authenticate, login
 
-from mains.models import Teacher
+from mains.models import Teacher, ClassRoom
 
 
 @csrf_exempt
@@ -47,3 +47,26 @@ def CheckEmail(request):
         return JsonResponse({'result': 'error'})
     except:
         return JsonResponse({'result': 'success'})
+
+
+@csrf_exempt
+def CreateClass(request):
+    try:
+        teacher = Teacher.objects.get(id=request.user.id)
+        classRoom = ClassRoom.objects.create(teacher=teacher, className=request.POST['className'],
+                                             classInfo=request.POST['classInfo'], studentCount=0)
+        classRoom.save()
+        return JsonResponse({'result': 'success', 'classRoomId': classRoom.id})
+    except:
+        return JsonResponse({'result': 'error'})
+
+
+def TeacherClass(request):
+    teacher = Teacher.objects.get(id=request.user.id)
+    classRooms = ClassRoom.objects.filter(teacher=teacher).order_by('-created')
+    return render(request, 'pages/teacher_class.html', {'classRooms': list(classRooms)})
+
+
+def DetailClassRoom(request):
+    classRoom = ClassRoom.objects.get(id=request.GET.get('classRoomId'))
+    return render(request, 'pages/teacher_detail_class.html', {'classRoom': classRoom})

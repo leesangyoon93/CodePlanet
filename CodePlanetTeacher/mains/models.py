@@ -13,6 +13,14 @@ from django.db import models
 from django.db import models
 
 
+class TimeStampedModel(models.Model):
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        abstract = True
+
+
 class Tbemailwhitelist(models.Model):
     clemail = models.CharField(db_column='clEmail', max_length=255)  # Field name made lowercase.
 
@@ -148,3 +156,10 @@ class Teacher(AbstractBaseUser):
         teacher.set_password(password)
         teacher.save()
         return teacher
+
+
+class ClassRoom(TimeStampedModel):
+    teacher = models.ForeignKey(Teacher)
+    className = models.CharField(max_length=255)
+    classInfo = models.CharField(max_length=255)
+    studentCount = models.IntegerField(default=0)

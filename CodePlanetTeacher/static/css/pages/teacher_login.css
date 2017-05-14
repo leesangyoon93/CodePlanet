@@ -72,22 +72,6 @@
   top:16px;
   width:426px;
 }
-.pg-text-field-25 {
-  background-color:#FFFFFF;
-  border-bottom-color:#FF6D00;
-  border-bottom-width:3px;
-  font-family:'Jeju Gothic', serif;
-  font-size:14px;
-  height:42px;
-  left:0px;
-  margin-left:auto;
-  margin-right:auto;
-  padding-left:8px;
-  padding-right:8px;
-  right:0px;
-  top:76px;
-  width:425px;
-}
 .pg-button {
   background-color:#FFFFFF;
   border-radius:50px;
@@ -123,6 +107,21 @@
   text-align:center;
   top:160px;
   width:133px;
+}
+.pg-text-field-46 {
+  border-bottom-color:#FF6D00;
+  border-bottom-width:3px;
+  font-size:14px;
+  font-weight:700;
+  height:42px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:8px;
+  padding-right:8px;
+  right:0px;
+  top:76px;
+  width:425px;
 }
 .footer {
   height:120px;
