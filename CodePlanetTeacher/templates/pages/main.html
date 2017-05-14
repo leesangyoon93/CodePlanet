@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=960" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/common/iu.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pages/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/header.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/footer.css">
+    <link href='https://fonts.googleapis.com/earlyaccess/hanna.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
+    <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("nav"    );
+        document.createElement("article");
+      </script>
+      <noscript>
+        <strong>Warning !</strong>
+        Because your browser does not support HTML5, some elements are simulated using JScript.
+        Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+      </noscript>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="iu-page main">
+      <header class="iu-header header">
+        {% include './compositions/header.html' %}
+      </header>
+      <section class="iu-page-content page-content">
+        <section class="iu-section section">
+          <div class="iu-center-box center-box-12">
+            <div class="iu-box box-26">
+              <video class="iu-movie movie"></video>
+              <div class="iu-text text-29">
+                <p>프로그래밍에 필요한 순차진행, 반복, 함수, 조건, 동시진행의 개념을 익히고,</p>
+                <p>미션 수행 과정을 통해 문제를 효율적으로 풀기 위한 컴퓨팅 사고력을 배양합니다.</p>
+                <p>코드플래닛은 아래의 코딩 개념을 익히는 스테이지로 구성되어 있습니다.</p>
+                <p>&nbsp;</p>
+                <p>&gt; 단계별 수행의 기초인 순차진행,<br />&gt; 순차진행 속에서 패턴 과 시퀀스 파악하여&nbsp; 효율적인&nbsp; 코딩을 위한 반복문,<br />&gt; 순차진행 속에서 규칙을 찾아 지정하고&nbsp; 필요시 호출하여 사용하는 함수,<br />&gt; 조건의 유/무를 판단하여 여러가지 경우의 조건에 따라 수행하는 조건문,<br />&gt; 앞서 배운&nbsp; 순차진행, 반복문, 함수, 조건문을&nbsp; 모두 활용하여&nbsp; 2개의 캐릭터를 동시에&nbsp; 움직이는&nbsp; 동시진행</p>
+              </div>
+            </div>
+            <div class="iu-box box">
+              <div class="iu-text text-26">
+                <p>&nbsp;코드플래닛은</p>
+                <p>퀘도형 로봇 &lsquo;누리&rsquo;와 드론형 로봇 &rsquo;나래&rsquo;의 화성탐사 미션을 통해</p>
+                <p>코딩의 기본 개념을 학습할 수 있는 소프트웨어 교육용 게임입니다.</p>
+              </div>
+              <a class="iux-outer-link" href="https://play.google.com/store/search?q=code%20planet&c=apps">
+                <img class="iu-image image-28" src="/static/project/copy_3.png">
+              </a>
+            </div>
+            <img class="iu-image image" src="/static/project/copy.png">
+          </div>
+        </section>
+      </section>
+      <footer class="iu-footer footer">
+        {% include './compositions/footer.html' %}
+      </footer>
+    </div>
+  </body>
+</HTML>

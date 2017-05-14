@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=960" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/common/iu.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pages/content.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/header.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/footer.css">
+    <link href='https://fonts.googleapis.com/earlyaccess/hanna.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
+    <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("nav"    );
+        document.createElement("article");
+      </script>
+      <noscript>
+        <strong>Warning !</strong>
+        Because your browser does not support HTML5, some elements are simulated using JScript.
+        Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+      </noscript>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="iu-page content">
+      <header class="iu-header header">
+        {% include './compositions/header.html' %}
+      </header>
+      <section class="iu-page-content page-content">
+        <section class="iu-section section">
+          <div class="iu-center-box center-box-37">
+            <div class="iu-text text-27">
+              <p>코드플래닛과 함께하는 코딩 학습</p>
+              <p>&nbsp;</p>
+              <p>수업을 개설하고 수업에 등록한 학생들의 &lsquo;코드플래닛&rsquo; 플레이 정보를 관리할 수 있습니다.</p>
+              <p>선생님으로 등록하시면 무료로 이용가능합니다.</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </div>
+            <div class="iu-text text-28">
+              <p>선생님에게도 학생에게도 어렵고 낯설게만 느껴지던 코딩 학습을 코드플래닛을 통해</p>
+              <p>즐겁고 보람차게 공부할 수 있습니다.&nbsp;</p>
+            </div>
+            <div class="iu-box box">
+              <div class="iu-floating-image floating-image"></div>
+              <div class="iu-text text-40">
+                <p>학생 활동지</p>
+              </div>
+              <div class="iu-text text-41">
+                <p>순차진행, 반복, 함수, 조건, 동시진행으로 이루어진 코드플래닛의 각 챕터를 학습하기 위한</p>
+                <p>보조 자료입니다. 학생 활동지와 함께 코드플래닛을 보다 더 효과적으로 학습할 수 있습니다.</p>
+              </div>
+              <input class="iu-pg-button pg-button" type="button" value="학생 활동지 다운 받기 ">
+            </div>
+            <div class="iu-box box-45"></div>
+          </div>
+        </section>
+      </section>
+      <footer class="iu-footer footer">
+        {% include './compositions/footer.html' %}
+      </footer>
+    </div>
+  </body>
+</HTML>

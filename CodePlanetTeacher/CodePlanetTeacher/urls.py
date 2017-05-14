@@ -15,7 +15,20 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.views.generic import TemplateView
+
+from mains.views import Signup, Login, CheckEmail
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', TemplateView.as_view(template_name="pages/main.html")),
+    url(r'^class$', TemplateView.as_view(template_name="pages/class.html")),
+    url(r'^content$', TemplateView.as_view(template_name="pages/content.html")),
+    url(r'^FAQ$', TemplateView.as_view(template_name="pages/FAQ.html")),
+    url(r'^after_login$', TemplateView.as_view(template_name="pages/teacher_after_login.html")),
+    url(r'^create_class$', TemplateView.as_view(template_name="pages/teacher_create_class.html")),
+    url(r'^created_class$', TemplateView.as_view(template_name="pages/teacher_created_class.html")),
+    url(r'^signup$', Signup),
+    url(r'^login$', Login),
+    url(r'^checkEmail', CheckEmail),
 ]

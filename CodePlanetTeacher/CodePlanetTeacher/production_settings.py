@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'mains',
 ]
 
+AUTH_USER_MODEL = 'mains.Teacher'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -77,9 +79,13 @@ WSGI_APPLICATION = 'CodePlanetTeacher.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'ebsproj',
+    'HOST': '52.79.52.30',
+    'PORT': '3306',
+    'USER': 'root',
+    'PASSWORD': 'tks404627'
+  }
 }
 
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=960" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/common/iu.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pages/FAQ.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/header.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/footer.css">
+    <link href='https://fonts.googleapis.com/earlyaccess/hanna.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
+    <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("nav"    );
+        document.createElement("article");
+      </script>
+      <noscript>
+        <strong>Warning !</strong>
+        Because your browser does not support HTML5, some elements are simulated using JScript.
+        Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+      </noscript>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="iu-page FAQ">
+      <header class="iu-header header">
+        {% include './compositions/header.html' %}
+      </header>
+      <section class="iu-page-content page-content">
+        <section class="iu-section section">
+          <div class="iu-center-box center-box-37">
+            <div class="iu-text text-28">
+              <p>코드플래닛을 하다가 궁금한 사항이 있으면 아래 질문 리스트를 확인해 주세요.</p>
+              <p>원하는 질문이 없다면 codeplanet@ebs.co.kr으로 연락 주세요.</p>
+            </div>
+            <div class="iu-text text-27">
+              <p>자주 하는 질문들</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="iu-footer footer">
+        {% include './compositions/footer.html' %}
+      </footer>
+    </div>
+  </body>
+</HTML>

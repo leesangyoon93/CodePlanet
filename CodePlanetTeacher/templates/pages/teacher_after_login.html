@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=960" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/common/iu.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pages/teacher_after_login.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/header_teacher.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/earlyaccess/hanna.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
+    <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("nav"    );
+        document.createElement("article");
+      </script>
+      <noscript>
+        <strong>Warning !</strong>
+        Because your browser does not support HTML5, some elements are simulated using JScript.
+        Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+      </noscript>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="iu-page teacher_after_login">
+      <header class="iu-header header">
+        {% include './compositions/header_teacher.html' %}
+      </header>
+      <section class="iu-page-content page-content">
+        <section class="iu-section section">
+          <div class="iu-center-box center-box-22">
+            <div class="iu-text text-23">
+              <p>Double-click to edit</p>
+            </div>
+            <div class="iu-box box-31">
+              <img class="iu-image image" src="/static/project/copy_10.png">
+              <div class="iu-text text-30">
+                <p>&nbsp;학생</p>
+              </div>
+              <div class="iu-text text-31">
+                <p>개설한 수업에 등록되어 있는 모든 학생들의 정보를 한눈에 볼 수 있습니다.</p>
+              </div>
+              <div class="iu-cell cell-48">
+                <a class="iux-inner-link" href="/teacher_created_class">
+                  <p>Go</p>
+                </a>
+              </div>
+            </div>
+            <div class="iu-box box">
+              <img class="iu-image image-48" src="/static/project/copy_12.png">
+              <div class="iu-text text-28">
+                <p>교실</p>
+              </div>
+              <div class="iu-text text-29">
+                <p>수업을 개설하고, 학생들의 진행상태를 확인할 수 있습니다.</p>
+              </div>
+              <div class="iu-cell cell-49">
+                <a class="iux-inner-link" href="/teacher_class">
+                  <p>Go</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="iu-footer footer">
+        {% include './compositions/footer.html' %}
+      </footer>
+    </div>
+  </body>
+</HTML>

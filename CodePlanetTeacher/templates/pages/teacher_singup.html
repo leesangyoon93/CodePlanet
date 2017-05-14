@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=960" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/common/iu.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pages/teacher_singup.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/header_teacher.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/footer.css">
+    <link href='https://fonts.googleapis.com/earlyaccess/hanna.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
+    <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/static/project/main.js"></script>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("nav"    );
+        document.createElement("article");
+      </script>
+      <noscript>
+        <strong>Warning !</strong>
+        Because your browser does not support HTML5, some elements are simulated using JScript.
+        Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+      </noscript>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="iu-page teacher_singup">
+      <header class="iu-header header">
+        {% include './compositions/header_teacher.html' %}
+      </header>
+      <section class="iu-page-content page-content">
+        <section class="iu-section section">
+          <div class="iu-center-box center-box-29">
+            <div class="iu-text text-30">
+              <p>코드플래닛 교사 모드의 선생님 계정을 생성합니다.</p>
+            </div>
+            <div class="iu-text text-24">
+              <p>회원가입&nbsp;</p>
+            </div>
+            <form class="iu-pg-form form_signup pg-form" enctype="multipart/form-data" action="javascript:" method="post">
+              {% csrf_token %}
+              <input class="iu-pg-text-field input_email input pg-text-field" type="email" name="email" placeholder="E-mail">
+              <input class="iu-pg-text-field input input_corporation pg-text-field-25" type="text" name="corporation" placeholder="소속 기관">
+              <input class="iu-pg-button btn_signup pg-button" type="submit" value="회원가입 완료">
+              <div class="iu-cell cell-29">
+                <a class="iux-inner-link" href="/login">
+                  <p>| 이미 계정이 있으신가요?</p>
+                </a>
+              </div>
+              <input class="iu-pg-text-field input input_birthday pg-text-field-29" type="text" name="birthday" placeholder="출생년도">
+              <input class="iu-pg-text-field input input_password1 pg-text-field-30" type="password" name="password1" placeholder="비밀번호">
+              <input class="iu-pg-text-field input_password2 pg-text-field-31" type="password" name="password2" placeholder="비밀번호 확인">
+              <input class="iu-pg-button btn_checkEmail pg-button-32" type="button" value="중복 확인">
+              <div class="iu-text text-33">
+                <p>가입함으로써 코드플래닛의 이용약관 및 개인정보보호정책에 동의합니다.</p>
+              </div>
+            </form>
+          </div>
+        </section>
+      </section>
+      <footer class="iu-footer footer">
+        {% include './compositions/footer.html' %}
+      </footer>
+    </div>
+  </body>
+</HTML>

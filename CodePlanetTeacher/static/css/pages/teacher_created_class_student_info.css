@@ -1,0 +1,268 @@
+.iu-center-box {
+  width:1024px;
+}
+.iu-page {
+  min-width:1024px;
+}
+.header {
+  -webkit-box-shadow:0px 2px 10px 0px #DBDBDB;
+  background-color:#FFFFFF;
+  background-position:center;
+  border-bottom-width:0px;
+  border-color:#000000;
+  box-shadow:0px 2px 10px 0px #DBDBDB;
+  color:#333333;
+  height:70px;
+  left:0px;
+  opacity:100;
+  position:relative;
+  top:0px;
+  width:100%;
+}
+.page-content {
+  background-color:#FFFFFF;
+}
+.section {
+  height:720px;
+}
+.text-39 {
+  font-family:'Hanna', serif;
+  font-size:24px;
+  font-weight:400;
+  height:60px;
+  left:39px;
+  top:30px;
+  width:180px;
+}
+.pg-button-39 {
+  background-color:#FFFFFF;
+  border-radius:50px;
+  color:#FF6D00;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:46px;
+  left:837px;
+  top:26px;
+  width:157px;
+}
+.box {
+  border-bottom-color:#B6B6B6;
+  border-bottom-width:1px;
+  border-top-color:#B6B6B6;
+  border-top-width:1px;
+  height:54px;
+  left:19px;
+  top:134px;
+  width:989px;
+}
+.pg-check-box {
+  height:32px;
+  left:15px;
+  top:11px;
+  width:24px;
+}
+.text-42 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:62px;
+  top:17px;
+  width:31px;
+}
+.text-44 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:146px;
+  top:17px;
+  width:48px;
+}
+.text-43 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:261px;
+  top:17px;
+  width:48px;
+}
+.text-45 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:361px;
+  top:17px;
+  width:56px;
+}
+.text-53 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:901px;
+  top:17px;
+  width:56px;
+}
+.text-46 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:23px;
+  left:834px;
+  top:103px;
+  width:38px;
+}
+.text-47 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:23px;
+  left:884px;
+  top:103px;
+  width:38px;
+}
+.image {
+  height:22px;
+  left:944px;
+  top:104px;
+  width:22px;
+}
+.box-49 {
+  border-bottom-color:#DBDBDB;
+  border-bottom-width:1px;
+  border-top-width:0px;
+  height:140px;
+  left:21px;
+  top:201px;
+  width:987px;
+}
+.pg-radio-button {
+  background-position:center center;
+  height:32px;
+  left:263px;
+  top:53px;
+  width:23px;
+}
+.pg-check-box-51 {
+  height:32px;
+  left:14px;
+  top:55px;
+  width:24px;
+}
+.text-51 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:60px;
+  top:63px;
+  width:31px;
+}
+.text-52 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:144px;
+  top:58px;
+  width:48px;
+}
+.text-54 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:901px;
+  top:57px;
+  width:56px;
+}
+.text-55 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:400;
+  height:27px;
+  left:360px;
+  top:57px;
+  width:38px;
+}
+.pg-radio-button-56 {
+  background-position:center center;
+  height:10px;
+  left:335px;
+  top:62px;
+  width:10px;
+}
+.pg-radio-button-57 {
+  background-position:center center;
+  height:10px;
+  left:405px;
+  top:62px;
+  width:10px;
+}
+.pg-radio-button-58 {
+  background-position:center center;
+  height:10px;
+  left:344px;
+  top:44px;
+  width:10px;
+}
+.pg-radio-button-59 {
+  background-position:center center;
+  height:10px;
+  left:360px;
+  top:31px;
+  width:10px;
+}
+.pg-radio-button-60 {
+  background-position:center center;
+  height:10px;
+  left:378px;
+  top:31px;
+  width:10px;
+}
+.pg-radio-button-61 {
+  background-position:center center;
+  height:10px;
+  left:397px;
+  top:44px;
+  width:10px;
+}
+.pg-radio-button-62 {
+  background-position:center center;
+  height:10px;
+  left:346px;
+  top:81px;
+  width:10px;
+}
+.pg-radio-button-63 {
+  background-position:center center;
+  height:10px;
+  left:361px;
+  top:94px;
+  width:10px;
+}
+.pg-radio-button-64 {
+  background-position:center center;
+  height:10px;
+  left:379px;
+  top:94px;
+  width:10px;
+}
+.pg-radio-button-65 {
+  background-position:center center;
+  height:10px;
+  left:397px;
+  top:82px;
+  width:10px;
+}
+.footer {
+  height:120px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:100%;
+}

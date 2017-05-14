@@ -1,0 +1,28 @@
+.iu-center-box {
+  width:1024px;
+}
+.center-box-2 {
+  background-color:#B6B6B6;
+}
+.cell-13 {
+  font-family:'Hanna', serif;
+  font-size:14px;
+  font-weight:300;
+  height:40px;
+  left:251px;
+  line-height:40px;
+  text-align:center;
+  top:66px;
+  width:532px;
+}
+.cell-27 {
+  font-family:'Hanna', serif;
+  font-size:12px;
+  font-weight:300;
+  height:40px;
+  left:246px;
+  line-height:40px;
+  text-align:center;
+  top:25px;
+  width:532px;
+}

@@ -1,0 +1,115 @@
+.iu-center-box {
+  width:1024px;
+}
+.iu-page {
+  min-width:1024px;
+}
+.header {
+  -webkit-box-shadow:0px 2px 10px 0px #DBDBDB;
+  background-color:#FFFFFF;
+  background-position:center;
+  border-bottom-width:0px;
+  border-color:#000000;
+  box-shadow:0px 2px 10px 0px #DBDBDB;
+  color:#333333;
+  float:none;
+  height:70px;
+  left:0px;
+  opacity:100;
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index:11;
+}
+.page-content {
+  background-color:#FFFFFF;
+}
+.section {
+  height:1000px;
+}
+.box {
+  background-color:#FECEAC;
+  height:500px;
+  left:1px;
+  top:51px;
+  width:1024px;
+}
+.image {
+  height:194px;
+  left:70px;
+  top:143px;
+  width:369px;
+}
+.text-27 {
+  font-family:'Hanna', serif;
+  font-size:30px;
+  font-weight:400;
+  height:43px;
+  left:515px;
+  top:141px;
+  width:288px;
+}
+.text-28 {
+  font-family:'Jeju Gothic', serif;
+  font-size:18px;
+  font-weight:400;
+  height:100px;
+  left:514px;
+  text-align:left;
+  top:232px;
+  width:391px;
+}
+.pg-button {
+  background-color:#FFFFFF;
+  border-radius:50px;
+  color:#FF6D00;
+  font-family:'Roboto', sans-serif;
+  font-size:18px;
+  font-weight:700;
+  height:46px;
+  left:517px;
+  top:397px;
+  width:158px;
+}
+.box-29 {
+  background-color:#A8D4D2;
+  height:450px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:550px;
+  width:1024px;
+}
+.text-29 {
+  font-family:'Hanna', serif;
+  font-size:30px;
+  font-weight:400;
+  height:43px;
+  left:84px;
+  top:97px;
+  width:288px;
+}
+.text-30 {
+  font-family:'Jeju Gothic', serif;
+  font-size:18px;
+  font-weight:400;
+  height:266px;
+  left:83px;
+  text-align:left;
+  top:173px;
+  width:391px;
+}
+.image-31 {
+  height:331px;
+  left:568px;
+  top:63px;
+  width:369px;
+}
+.footer {
+  height:120px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:100%;
+}
