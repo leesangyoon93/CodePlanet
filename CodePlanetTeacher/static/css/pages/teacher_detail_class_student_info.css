@@ -119,134 +119,6 @@
   top:104px;
   width:22px;
 }
-.box-49 {
-  border-bottom-color:#DBDBDB;
-  border-bottom-width:1px;
-  border-top-width:0px;
-  height:140px;
-  left:21px;
-  top:201px;
-  width:987px;
-}
-.pg-radio-button {
-  background-position:center center;
-  height:32px;
-  left:263px;
-  top:53px;
-  width:23px;
-}
-.pg-check-box-51 {
-  height:32px;
-  left:14px;
-  top:55px;
-  width:24px;
-}
-.text-51 {
-  font-family:'Jeju Gothic', serif;
-  font-size:14px;
-  font-weight:400;
-  height:27px;
-  left:60px;
-  top:63px;
-  width:31px;
-}
-.text-52 {
-  font-family:'Jeju Gothic', serif;
-  font-size:14px;
-  font-weight:400;
-  height:27px;
-  left:144px;
-  top:58px;
-  width:48px;
-}
-.text-54 {
-  font-family:'Jeju Gothic', serif;
-  font-size:14px;
-  font-weight:400;
-  height:27px;
-  left:901px;
-  top:57px;
-  width:56px;
-}
-.text-55 {
-  font-family:'Jeju Gothic', serif;
-  font-size:14px;
-  font-weight:400;
-  height:27px;
-  left:360px;
-  top:57px;
-  width:38px;
-}
-.pg-radio-button-56 {
-  background-position:center center;
-  height:10px;
-  left:335px;
-  top:62px;
-  width:10px;
-}
-.pg-radio-button-57 {
-  background-position:center center;
-  height:10px;
-  left:405px;
-  top:62px;
-  width:10px;
-}
-.pg-radio-button-58 {
-  background-position:center center;
-  height:10px;
-  left:344px;
-  top:44px;
-  width:10px;
-}
-.pg-radio-button-59 {
-  background-position:center center;
-  height:10px;
-  left:360px;
-  top:31px;
-  width:10px;
-}
-.pg-radio-button-60 {
-  background-position:center center;
-  height:10px;
-  left:378px;
-  top:31px;
-  width:10px;
-}
-.pg-radio-button-61 {
-  background-position:center center;
-  height:10px;
-  left:397px;
-  top:44px;
-  width:10px;
-}
-.pg-radio-button-62 {
-  background-position:center center;
-  height:10px;
-  left:346px;
-  top:81px;
-  width:10px;
-}
-.pg-radio-button-63 {
-  background-position:center center;
-  height:10px;
-  left:361px;
-  top:94px;
-  width:10px;
-}
-.pg-radio-button-64 {
-  background-position:center center;
-  height:10px;
-  left:379px;
-  top:94px;
-  width:10px;
-}
-.pg-radio-button-65 {
-  background-position:center center;
-  height:10px;
-  left:397px;
-  top:82px;
-  width:10px;
-}
 .cell-48 > a {
   line-height:46px;
 }
@@ -263,10 +135,276 @@
   top:26px;
   width:157px;
 }
+.collection {
+  float:none;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:200px;
+  position:relative;
+  width:987px;
+}
+.import {
+  height:142px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:1024px;
+}
+.import-104 {
+  height:142px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:1024px;
+}
+.import-105 {
+  height:142px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:1024px;
+}
+.import-106 {
+  height:142px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:1024px;
+}
+.import-107 {
+  height:142px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:1024px;
+}
 .footer {
   height:120px;
   left:0px;
   position:relative;
   top:0px;
   width:100%;
+}
+.popup {
+  background-color:#FFFFFF;
+  border-color:#DBDBDB;
+  border-width:2px;
+  height:376px;
+  position:fixed;
+  width:590px;
+  z-index:100;
+}
+.popup > .iux-popup-close-button {
+  background-image:url('/static/project/btn_popup_close.png');
+  display:inherit;
+  height:32px;
+  position:absolute;
+  right:10px;
+  top:10px;
+  width:32px;
+}
+.image-90 {
+  height:30px;
+  left:38px;
+  top:39px;
+  width:44px;
+}
+.text-91 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:300;
+  height:54px;
+  left:104px;
+  top:32px;
+  width:441px;
+}
+.pg-form {
+  height:100%;
+  left:0px;
+  top:0px;
+  width:100%;
+}
+.pg-button {
+  background-color:#FFFFFF;
+  border-color:#DBDBDB;
+  border-radius:50px;
+  border-width:2px;
+  color:#FF6D00;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:40px;
+  left:398px;
+  top:297px;
+  width:100px;
+}
+.pg-text-field {
+  border-bottom-color:#FF6D00;
+  border-bottom-width:3px;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:43px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:8px;
+  padding-right:8px;
+  right:0px;
+  top:104px;
+  width:375px;
+}
+.pg-text-field-94 {
+  border-bottom-color:#FF6D00;
+  border-bottom-width:3px;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:43px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:8px;
+  padding-right:8px;
+  right:0px;
+  top:167px;
+  width:375px;
+}
+.pg-text-field-95 {
+  border-bottom-color:#FF6D00;
+  border-bottom-width:3px;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:43px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:8px;
+  padding-right:8px;
+  right:0px;
+  top:229px;
+  width:375px;
+}
+.popup-98 {
+  background-color:#FFFFFF;
+  border-color:#DBDBDB;
+  border-width:2px;
+  height:342px;
+  position:fixed;
+  width:590px;
+  z-index:100;
+}
+.popup-98 > .iux-popup-close-button {
+  background-image:url('/static/project/btn_popup_close.png');
+  display:inherit;
+  height:32px;
+  position:absolute;
+  right:10px;
+  top:10px;
+  width:32px;
+}
+.image-98 {
+  height:30px;
+  left:73px;
+  top:48px;
+  width:44px;
+}
+.text-99 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:300;
+  height:29px;
+  left:139px;
+  top:53px;
+  width:441px;
+}
+.pg-button-100 {
+  background-color:#FFFFFF;
+  border-color:#DBDBDB;
+  border-radius:50px;
+  border-width:2px;
+  color:#FF6D00;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:40px;
+  left:421px;
+  top:271px;
+  width:100px;
+}
+.popup-108 {
+  background-color:#FFFFFF;
+  border-color:#B6B6B6;
+  border-width:2px;
+  height:350px;
+  position:fixed;
+  width:590px;
+  z-index:100;
+}
+.popup-108 > .iux-popup-close-button {
+  background-image:url('/static/project/btn_popup_close.png');
+  display:inherit;
+  height:32px;
+  position:absolute;
+  right:10px;
+  top:10px;
+  width:32px;
+}
+.pg-form-113 {
+  height:100%;
+  left:0px;
+  top:0px;
+  width:100%;
+}
+.text-110 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:300;
+  height:29px;
+  left:50px;
+  top:44px;
+  width:67px;
+}
+.pg-text-field-109 {
+  border-bottom-color:#FF6D00;
+  border-bottom-width:3px;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:34px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:8px;
+  padding-right:8px;
+  right:0px;
+  top:87px;
+  width:480px;
+}
+.pg-text-view-110 {
+  background-color:#F7F7F7;
+  border-bottom-color:#FF6D00;
+  border-width:0px;
+  color:#6D6D6D;
+  font-family:'Jeju Gothic', serif;
+  font-size:12px;
+  height:124px;
+  left:0px;
+  line-height:1.30;
+  margin-left:auto;
+  margin-right:auto;
+  padding:8px;
+  right:0px;
+  text-align:left;
+  top:145px;
+  width:481px;
+}
+.pg-button-111 {
+  background-color:#FFFFFF;
+  border-color:#DBDBDB;
+  border-radius:50px;
+  border-width:2px;
+  color:#FF6D00;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:40px;
+  left:445px;
+  top:300px;
+  width:100px;
 }

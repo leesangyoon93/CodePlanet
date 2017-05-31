@@ -109,7 +109,6 @@ class Teacher(AbstractBaseUser):
         unique=True,
     )
     corporation = models.CharField(
-        u'소속기관',
         max_length=255,
         blank=False,
         default='')

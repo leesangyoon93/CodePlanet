@@ -2,27 +2,36 @@
   width:1024px;
 }
 .center-box-2 {
-  background-color:#B6B6B6;
+  background-color:#FFFFFF;
+  font-size:14px;
 }
 .cell-13 {
-  font-family:'Hanna', serif;
+  color:#6D6D6D;
+  font-family:'Jeju Gothic', serif;
   font-size:14px;
   font-weight:300;
   height:40px;
-  left:251px;
+  left:480px;
   line-height:40px;
   text-align:center;
-  top:66px;
-  width:532px;
+  top:60px;
+  width:260px;
 }
 .cell-27 {
-  font-family:'Hanna', serif;
+  color:#6D6D6D;
+  font-family:'Jeju Gothic', serif;
   font-size:12px;
   font-weight:300;
   height:40px;
-  left:246px;
+  left:480px;
   line-height:40px;
   text-align:center;
-  top:25px;
-  width:532px;
+  top:37px;
+  width:262px;
+}
+.image-167 {
+  height:40px;
+  left:342px;
+  top:46px;
+  width:100px;
 }

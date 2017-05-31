@@ -1,0 +1,55 @@
+.text-161 {
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  font-weight:300;
+  height:29px;
+  left:50px;
+  top:44px;
+  width:67px;
+}
+.pg-text-field-162 {
+  border-bottom-color:#FF6D00;
+  border-bottom-width:3px;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:34px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:8px;
+  padding-right:8px;
+  right:0px;
+  top:87px;
+  width:480px;
+}
+.pg-text-view {
+  background-color:#F7F7F7;
+  border-bottom-color:#FF6D00;
+  border-width:0px;
+  color:#6D6D6D;
+  font-family:'Jeju Gothic', serif;
+  font-size:12px;
+  height:124px;
+  left:0px;
+  line-height:1.30;
+  margin-left:auto;
+  margin-right:auto;
+  padding:8px;
+  right:0px;
+  text-align:left;
+  top:145px;
+  width:481px;
+}
+.pg-button-164 {
+  background-color:#FFFFFF;
+  border-color:#DBDBDB;
+  border-radius:50px;
+  border-width:2px;
+  color:#FF6D00;
+  font-family:'Jeju Gothic', serif;
+  font-size:14px;
+  height:40px;
+  left:445px;
+  top:300px;
+  width:100px;
+}

@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import authenticate, login
 
-from mains.models import Teacher, ClassRoom
+from mains.models import *
 
 
 @csrf_exempt
@@ -67,6 +67,12 @@ def TeacherClass(request):
     return render(request, 'pages/teacher_class.html', {'classRooms': list(classRooms)})
 
 
-def DetailClassRoom(request):
+def CreatedClassRoom(request):
     classRoom = ClassRoom.objects.get(id=request.GET.get('classRoomId'))
     return render(request, 'pages/teacher_detail_class.html', {'classRoom': classRoom})
+
+
+def DetailClassRoom(request):
+    logs = Tbuser.objects.all()
+    print(logs)
+    return render(request, 'pages/teacher_detail_class_student_info.html')

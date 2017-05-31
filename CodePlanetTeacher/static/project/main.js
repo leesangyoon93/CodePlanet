@@ -7,9 +7,8 @@ $(document).ready(function () {
         window.history.back();
     });
 
-    $('.btn_detailClassRoom').css('cursor', 'pointer')
     $('.btn_detailClassRoom').click(function() {
-        window.location.href = '/detail_class?classRoomId=' + $(this).attr('id')
+        window.location.href = '/created_class?classRoomId=' + $(this).attr('id')
     })
 
     $('.form_createClass').submit(function() {
@@ -22,7 +21,7 @@ $(document).ready(function () {
                 data: $(this).serialize(),
                 success: function(data) {
                     if(data.result == 'success') {
-                        window.location.href = "/detail_class?classRoomId=" + data.classRoomId
+                        window.location.href = "/created_class?classRoomId=" + data.classRoomId
                     }
                     else {
                         alert("교실을 만드는 과정에 오류가 발생했습니다. 다시 시도해주세요.")

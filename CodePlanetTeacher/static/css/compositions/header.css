@@ -2,6 +2,7 @@
   width:1024px;
 }
 .center-box {
+  background-color:rgba(255,255,255,0.68);
   opacity:100;
 }
 .image-27 {
@@ -14,24 +15,34 @@
   line-height:40px;
 }
 .cell-18 {
-  color:#242424;
+  -webkit-transition:color 0.3s;
+  color:#929292;
   font-family:'Hanna', serif;
   font-weight:400;
   height:40px;
   left:548px;
   text-align:center;
   top:16px;
+  transition:color 0.3s;
   width:100px;
 }
+.cell-18.iux-hover, .cell-18.iux-active {
+  color:#7AD6C9;
+}
 .cell {
-  color:#242424;
+  -webkit-transition:color 0.3s;
+  color:#929292;
   font-family:'Hanna', serif;
   font-weight:400;
   height:40px;
   left:450px;
   text-align:center;
   top:16px;
+  transition:color 0.3s;
   width:100px;
+}
+.cell.iux-hover, .cell.iux-active {
+  color:#7AD6C9;
 }
 .cell > a {
   line-height:40px;
@@ -57,14 +68,19 @@
   width:62px;
 }
 .cell-19 {
-  color:#242424;
+  -webkit-transition:color 0.3s;
+  color:#929292;
   font-family:'Hanna', serif;
   font-weight:400;
   height:40px;
   left:647px;
   text-align:center;
   top:15px;
+  transition:color 0.3s;
   width:100px;
+}
+.cell-19.iux-hover, .cell-19.iux-active {
+  color:#7AD6C9;
 }
 .cell-19 > a {
   line-height:40px;
@@ -83,12 +99,17 @@
   line-height:40px;
 }
 .cell-20 {
-  color:#242424;
+  -webkit-transition:color 0.3s;
+  color:#929292;
   font-family:'Hanna', serif;
   font-weight:400;
   height:40px;
   left:747px;
   text-align:center;
   top:15px;
+  transition:color 0.3s;
   width:100px;
+}
+.cell-20.iux-hover, .cell-20.iux-active {
+  color:#7AD6C9;
 }

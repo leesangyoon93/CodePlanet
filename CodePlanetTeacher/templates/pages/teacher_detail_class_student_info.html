@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/static/common/iu.css">
     <link rel="stylesheet" type="text/css" href="/static/css/pages/teacher_detail_class_student_info.css">
     <link rel="stylesheet" type="text/css" href="/static/css/compositions/header_teacher.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/student.css">
     <link rel="stylesheet" type="text/css" href="/static/css/compositions/footer.css">
     <link href='https://fonts.googleapis.com/earlyaccess/hanna.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
@@ -58,43 +59,24 @@
                 <p>상세보기</p>
               </div>
             </div>
-            <div class="iu-text text-46">
+            <div class="iux-popup-button iu-text text-46" data-iu-popup-id="popup">
               <p>추가</p>
             </div>
-            <div class="iu-text text-47">
+            <div class="iux-popup-button iu-text text-47" data-iu-popup-id="popup-98">
               <p>삭제</p>
             </div>
-            <img class="iu-image image" src="/static/project/copy_8.png">
-            <div class="iu-box box-49">
-              <input class="iu-pg-radio-button pg-radio-button" type="radio">
-              <input class="iu-pg-check-box pg-check-box-51" type="checkbox">
-              <div class="iu-text text-51">
-                <p>1</p>
-              </div>
-              <div class="iu-text text-52">
-                <p>가나다</p>
-              </div>
-              <div class="iu-text text-54">
-                <p>상세보기</p>
-              </div>
-              <div class="iu-text text-55">
-                <p>Ch.1</p>
-              </div>
-              <input class="iu-pg-radio-button pg-radio-button-56" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-57" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-58" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-59" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-60" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-61" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-62" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-63" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-64" type="radio">
-              <input class="iu-pg-radio-button pg-radio-button-65" type="radio">
-            </div>
+            <img class="iux-popup-button iu-image image" src="/static/project/copy_8.png" data-iu-popup-id="popup-108">
             <div class="iu-cell cell-48">
               <a class="iux-inner-link" href="/teacher_class">
                 <p>다른 교실로 이동</p>
               </a>
+            </div>
+            <div class="iu-collection collection">
+              {% for student in students %}
+                <div class="iu-import import">
+                  {% include './compositions/student.html' %}
+                </div>
+              {% endfor %}
             </div>
           </div>
         </section>
@@ -102,6 +84,43 @@
       <footer class="iu-footer footer">
         {% include './compositions/footer.html' %}
       </footer>
+    </div>
+    <div id="iux-popup-dimcolor" class="iux-popup-dimcolor" style="display:none"></div>
+    <div id="popup" class="iu-popup popup" data-iu-popup-extern-closed data-iu-show-duration="0.40" data-iu-show-animation="top-down">
+      <img class="iu-image image-90" src="/static/project/copy_13.png">
+      <div class="iu-text text-91">
+        <p>수업에 추가할 학생의 이름과 부모님의 이메일 정보를 입력합니다.</p>
+        <p>등록한 이메일로 인증/ 개인정보 이용동의 메일 및 공지사항이 발송됩니다.</p>
+        <p>&nbsp;</p>
+      </div>
+      <form class="iu-pg-form form_addStudent pg-form" enctype="multipart/form-data" action="javascript:" method="post">
+        {% csrf_token %}
+        <input class="iu-pg-button btn_addStudent pg-button" type="submit" value="등록">
+        <input class="iu-pg-text-field studentName pg-text-field" type="text" name="studentName" placeholder="학생 이름">
+        <input class="iu-pg-text-field email pg-text-field-94" type="email" name="email" placeholder="부모님의 이메일 주소">
+        <input class="iu-pg-text-field studentInfo pg-text-field-95" type="text" name="studentInfo" placeholder="기타 학생 정보">
+      </form>
+      <div class="iux-popup-close-button"></div>
+    </div>
+    <div id="popup-98" class="iu-popup popup-98" data-iu-popup-extern-closed data-iu-show-duration="0.40" data-iu-show-animation="top-down">
+      <img class="iu-image image-98" src="/static/project/copy_13.png">
+      <div class="iu-text text-99">
+        <p>아래 학생을 교실에서 삭제합니다.</p>
+      </div>
+      <input class="iu-pg-button btn_removeConfirm pg-button-100" type="button" value="확인">
+      <div class="iux-popup-close-button"></div>
+    </div>
+    <div id="popup-108" class="iu-popup popup-108" data-iu-popup-extern-closed data-iu-show-duration="0.40" data-iu-show-animation="top-down">
+      <form class="iu-pg-form form_sendEmail pg-form-113" enctype="multipart/form-data" action="javascript:" method="post">
+        {% csrf_token %}
+        <div class="iu-text text-110">
+          <p>선택학생 :&nbsp;</p>
+        </div>
+        <input class="iu-pg-text-field title pg-text-field-109" type="text" name="title" placeholder="제목을 입력하세요.">
+        <textarea class="iu-pg-text-view content pg-text-view-110" name="content" placeholder="메일 내용을 입력하세요."></textarea>
+        <input class="iu-pg-button btn_sendEmail pg-button-111" type="submit" value="보내기">
+      </form>
+      <div class="iux-popup-close-button"></div>
     </div>
   </body>
 </HTML>
