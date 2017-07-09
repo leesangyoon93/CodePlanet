@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <HTML>
+<!-- this site is created with: http://www.iueditor.org -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
     <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/static/project/main.js"></script>
     <!--[if lt IE 9]>
       <script>
         document.createElement("header" );
@@ -93,12 +95,13 @@
         <p>등록한 이메일로 인증/ 개인정보 이용동의 메일 및 공지사항이 발송됩니다.</p>
         <p>&nbsp;</p>
       </div>
-      <form class="iu-pg-form form_addStudent pg-form" enctype="multipart/form-data" action="javascript:" method="post">
+      <form class="iu-pg-form form_createStudent pg-form" enctype="multipart/form-data" action="javascript:" method="post">
         {% csrf_token %}
+        <input type="hidden" name="classRoomId" value="{{ classRoomId }}">
         <input class="iu-pg-button btn_addStudent pg-button" type="submit" value="등록">
-        <input class="iu-pg-text-field studentName pg-text-field" type="text" name="studentName" placeholder="학생 이름">
+        <input class="iu-pg-text-field name pg-text-field" type="text" name="name" placeholder="학생 이름">
         <input class="iu-pg-text-field email pg-text-field-94" type="email" name="email" placeholder="부모님의 이메일 주소">
-        <input class="iu-pg-text-field studentInfo pg-text-field-95" type="text" name="studentInfo" placeholder="기타 학생 정보">
+        <input class="iu-pg-text-field info pg-text-field-95" type="text" name="info" placeholder="기타 학생 정보">
       </form>
       <div class="iux-popup-close-button"></div>
     </div>

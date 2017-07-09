@@ -72,12 +72,14 @@ class Tbrank(models.Model):
 
 class Tbuser(models.Model):
     clid = models.AutoField(db_column='clId', primary_key=True)  # Field name made lowercase.
-    claccount = models.CharField(db_column='clAccount', max_length=255)  # Field name made lowercase.
-    clpassword = models.CharField(db_column='clPassword', max_length=255)  # Field name made lowercase.
+    claccount = models.CharField(db_column='clAccount', max_length=255, default="")  # Field name made lowercase.
+    clpassword = models.CharField(db_column='clPassword', max_length=255, default="1234")  # Field name made lowercase.
     clrank = models.IntegerField(db_column='clRank', blank=True, null=True)  # Field name made lowercase.
+    clclassroom = models.IntegerField(db_column='clClassRoom', null=True)
+    clname = models.CharField(db_column='clName', null=True, max_length=255)
+    clinfo = models.TextField(db_column='clInfo', null=True, max_length=255)
 
     class Meta:
-        managed = False
         db_table = 'tbuser'
 
 
@@ -167,3 +169,10 @@ class ClassRoom(TimeStampedModel):
     className = models.CharField(max_length=255)
     classInfo = models.CharField(max_length=255)
     studentCount = models.IntegerField(default=0)
+#
+#
+# class Student(TimeStampedModel):
+#     classRoom = models.ForeignKey(ClassRoom)
+#     name = models.CharField(max_length=255)
+#     email = models.CharField(max_length=255)
+#     extraInfo = models.TextField(max_length=255)

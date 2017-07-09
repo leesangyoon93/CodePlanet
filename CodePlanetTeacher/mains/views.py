@@ -73,6 +73,19 @@ def CreatedClassRoom(request):
 
 
 def DetailClassRoom(request):
-    logs = Tbuser.objects.all()
-    print(logs)
-    return render(request, 'pages/teacher_detail_class_student_info.html')
+    classRoom = ClassRoom.objects.get(id=request.GET.get('classRoomId'))
+    students = Tbuser.objects.filter(clclassroom=classRoom.id).order_by('clname')
+    return render(request, 'pages/teacher_detail_class_student_info.html', {'students': list(students), 'classRoomId': classRoom.id})
+
+
+@csrf_exempt
+def CreateStudent(request):
+    try:
+        print(request.POST)
+        student = Tbuser.objects.create(claccount=request.POST['email'], clpassword="1234",
+                                        clclassroom=request.POST['classRoomId'],
+                                        clname=request.POST['name'], clinfo=request.POST['info'])
+        student.save()
+        return JsonResponse({'result': 'success'})
+    except:
+        return JsonResponse({'result': 'error'})

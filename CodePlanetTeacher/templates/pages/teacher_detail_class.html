@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <HTML>
+<!-- this site is created with: http://www.iueditor.org -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
     <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
+    <script type="text/javascript" src="/static/project/main.js"></script>
     <!--[if lt IE 9]>
       <script>
         document.createElement("header" );
@@ -40,9 +42,7 @@
             <div class="iu-text text-38">
               <p>{{classRoom.className}}</p>
             </div>
-            <a class="iux-outer-link" href="/detail_class">
-              <img class="iu-image image" src="/static/project/copy_6.png">
-            </a>
+            <img class="iu-image btn_class_studentInfo image" id={{ classRoom.id }} src="/static/project/copy_6.png">
             <div class="iu-text text-41">
               <p>학생 정보</p>
             </div>
