@@ -75,9 +75,9 @@ class Tbuser(models.Model):
     claccount = models.CharField(db_column='clAccount', max_length=255, default="")  # Field name made lowercase.
     clpassword = models.CharField(db_column='clPassword', max_length=255, default="1234")  # Field name made lowercase.
     clrank = models.IntegerField(db_column='clRank', blank=True, null=True)  # Field name made lowercase.
-    clclassroom = models.IntegerField(db_column='clClassRoom', null=True)
-    clname = models.CharField(db_column='clName', null=True, max_length=255)
-    clinfo = models.TextField(db_column='clInfo', null=True, max_length=255)
+    clclassroom = models.IntegerField(db_column='clClassRoom', default=1)
+    clname = models.CharField(db_column='clName', default="Unnamed", max_length=255)
+    clinfo = models.TextField(db_column='clInfo', default="", max_length=255)
 
     class Meta:
         db_table = 'tbuser'

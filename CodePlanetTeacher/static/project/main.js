@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $('.btn_class_studentInfo').click(function() {
         window.location.href = '/detail_class?classRoomId=' + $(this).attr('id')
-    });
+    })
 
     $('.btn_detailClassRoom').click(function() {
         window.location.href = '/created_class?classRoomId=' + $(this).attr('id')

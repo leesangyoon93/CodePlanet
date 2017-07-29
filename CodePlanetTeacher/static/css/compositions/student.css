@@ -56,73 +56,83 @@
   top:57px;
   width:38px;
 }
-.pg-radio-button-192 {
-  background-position:center center;
-  height:10px;
-  left:335px;
-  top:62px;
-  width:10px;
-}
-.pg-radio-button-193 {
-  background-position:center center;
-  height:10px;
-  left:405px;
-  top:62px;
-  width:10px;
-}
-.pg-radio-button-194 {
-  background-position:center center;
-  height:10px;
-  left:344px;
-  top:44px;
-  width:10px;
-}
-.pg-radio-button-195 {
-  background-position:center center;
-  height:10px;
-  left:360px;
-  top:31px;
-  width:10px;
-}
-.pg-radio-button-196 {
-  background-position:center center;
+.box-182 {
+  background-color:#000000;
+  border-radius:10px;
   height:10px;
   left:378px;
   top:31px;
   width:10px;
 }
-.pg-radio-button-197 {
-  background-position:center center;
+.box-181 {
+  background-color:#000000;
+  border-radius:10px;
+  height:10px;
+  left:360px;
+  top:31px;
+  width:10px;
+}
+.box-183 {
+  background-color:#000000;
+  border-radius:10px;
+  height:10px;
+  left:379px;
+  top:95px;
+  width:10px;
+}
+.box-184 {
+  background-color:#000000;
+  border-radius:10px;
+  height:10px;
+  left:361px;
+  top:95px;
+  width:10px;
+}
+.box-186 {
+  background-color:#000000;
+  border-radius:10px;
   height:10px;
   left:397px;
   top:44px;
   width:10px;
 }
-.pg-radio-button-198 {
-  background-position:center center;
+.box-187 {
+  background-color:#000000;
+  border-radius:10px;
   height:10px;
-  left:346px;
-  top:81px;
+  left:344px;
+  top:44px;
   width:10px;
 }
-.pg-radio-button-199 {
-  background-position:center center;
-  height:10px;
-  left:361px;
-  top:94px;
-  width:10px;
-}
-.pg-radio-button-200 {
-  background-position:center center;
-  height:10px;
-  left:379px;
-  top:94px;
-  width:10px;
-}
-.pg-radio-button-201 {
-  background-position:center center;
+.box-188 {
+  background-color:#000000;
+  border-radius:10px;
   height:10px;
   left:397px;
-  top:82px;
+  top:80px;
+  width:10px;
+}
+.box-189 {
+  background-color:#000000;
+  border-radius:10px;
+  height:10px;
+  left:344px;
+  top:80px;
+  width:10px;
+}
+.box-190 {
+  background-color:#000000;
+  border-radius:10px;
+  height:10px;
+  left:335px;
+  top:62px;
+  width:10px;
+}
+.box-191 {
+  background-color:#000000;
+  border-radius:10px;
+  height:10px;
+  left:405px;
+  top:62px;
   width:10px;
 }
