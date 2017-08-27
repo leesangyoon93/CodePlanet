@@ -72,20 +72,44 @@ def CreatedClassRoom(request):
     return render(request, 'pages/teacher_detail_class.html', {'classRoom': classRoom})
 
 
+# tbuser 에도 이 이메일로 계정이 생성되어 있는 학생만 뿌리기
 def DetailClassRoom(request):
     classRoom = ClassRoom.objects.get(id=request.GET.get('classRoomId'))
-    students = Tbuser.objects.filter(clclassroom=classRoom.id).order_by('clname')
-    return render(request, 'pages/teacher_detail_class_student_info.html', {'students': list(students), 'classRoomId': classRoom.id})
+    students = Student.objects.filter(classRoom=classRoom.id).order_by('name')
+
+    studentList = list(students)
+    data = []
+    if students.exists():
+        for idx, student in enumerate(studentList):
+            try:
+                user = Tbuser.objects.get(claccount=student.email)
+                info = Tbgameinfo.objects.get(clid=user.clid)
+                tmpData = {'chapter': info.clchapter, 'stage': info.clstage,
+                           'name': studentList[idx].name, 'id': user.clid, 'number': idx + 1, 'isAccount': True}
+                data.append(tmpData)
+            except:
+                tmpData = {'chapter': -1, 'stage': -1,
+                           'name': studentList[idx].name, 'id': -1, 'number': idx + 1, 'isAccount': False}
+                data.append(tmpData)
+
+    return render(request, 'pages/teacher_detail_class_student_info.html',
+                  {'students': data, 'classRoomId': classRoom.id})
 
 
 @csrf_exempt
 def CreateStudent(request):
     try:
-        print(request.POST)
-        student = Tbuser.objects.create(claccount=request.POST['email'], clpassword="1234",
-                                        clclassroom=request.POST['classRoomId'],
-                                        clname=request.POST['name'], clinfo=request.POST['info'])
+        classRoom = ClassRoom.objects.get(id=request.POST['classRoomId'])
+        student = Student.objects.create(classRoom=classRoom, name=request.POST['name'],
+                                         extraInfo=request.POST['info'], email=request.POST['email'])
         student.save()
+
+        emailWhiteList = Tbemailwhitelist.objects.create(clemail=request.POST['email'])
+        emailWhiteList.save()
         return JsonResponse({'result': 'success'})
     except:
         return JsonResponse({'result': 'error'})
+
+
+def DetailStudent(request):
+    return render(request, 'pages/teacher_detail_class_student_clicked.html')

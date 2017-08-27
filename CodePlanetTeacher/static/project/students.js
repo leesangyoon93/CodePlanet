@@ -19,4 +19,12 @@ $(document).ready(function() {
             })
         }
     });
+
+    $('.btn_detail_student').click(function() {
+        window.location.href = '/detail_student?studentId=' + $(this).attr('id') + '&classRoomId=' + $('.text_className').attr('id')
+    })
+
+    $('.btn_show_all_student').click(function() {
+        window.history.back();
+    })
 })

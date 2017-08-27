@@ -1,26 +1,205 @@
 <div class="iu-box box-185">
-  <input class="iu-pg-radio-button pg-radio-button-186" type="radio">
-  <input class="iu-pg-check-box pg-check-box-189" value={{ student.clid }} type="checkbox" name="studentCheck">
+  <input class="iu-pg-check-box pg-check-box-189" value={{ student.id }} type="checkbox" name="studentCheck">
   <div class="iu-text text-188">
-    <p>1</p>
+    <p>{{student.number}}</p>
   </div>
   <div class="iu-text text-187">
-    <p>{{student.clname}}</p>
+    <p>{{student.name}}</p>
   </div>
-  <div class="iu-text text-190">
+  {% if student.isAccount == True %}
+  <div class="iu-text btn_detail_student text-190" id = {{ student.id }}>
     <p>상세보기</p>
   </div>
-  <div class="iu-text text-191">
-    <p>Ch.1</p>
+  {% endif %}
+  {% if student.chapter > 0 %}
+  <div class="iu-box box-192">
+    <div class="iu-text text-191">
+      <p>Ch.1</p>
+    </div>
+    {% if student.chapter > 1 or student.stage > 0 %}
+    <div class="iu-box box-182"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 9 %}
+    <div class="iu-box box-181"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 4 %}
+    <div class="iu-box box-183"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 5 %}
+    <div class="iu-box box-184"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 1 %}
+    <div class="iu-box box-186"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 8 %}
+    <div class="iu-box box-187"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 3 %}
+    <div class="iu-box box-188"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 6 %}
+    <div class="iu-box box-189"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 7 %}
+    <div class="iu-box box-190"></div>
+    {% endif %}
+    {% if student.chapter > 1 or student.stage > 2 %}
+    <div class="iu-box box-191"></div>
+    {% endif %}
   </div>
-  <div class="iu-box box-182"></div>
-  <div class="iu-box box-181"></div>
-  <div class="iu-box box-183"></div>
-  <div class="iu-box box-184"></div>
-  <div class="iu-box box-186"></div>
-  <div class="iu-box box-187"></div>
-  <div class="iu-box box-188"></div>
-  <div class="iu-box box-189"></div>
-  <div class="iu-box box-190"></div>
-  <div class="iu-box box-191"></div>
+  {% endif %}
+  {% if student.chapter > 1 %}
+  <div class="iu-box box-193">
+    <div class="iu-text text-185">
+      <p>Ch.2</p>
+    </div>
+    {% if student.chapter > 2 or student.stage > 0 %}
+    <div class="iu-box box-194"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 9 %}
+    <div class="iu-box box-195"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 4 %}
+    <div class="iu-box box-196"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 5 %}
+    <div class="iu-box box-197"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 1 %}
+    <div class="iu-box box-198"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 8 %}
+    <div class="iu-box box-199"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 3 %}
+    <div class="iu-box box-200"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 6 %}
+    <div class="iu-box box-201"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 7 %}
+    <div class="iu-box box-202"></div>
+    {% endif %}
+    {% if student.chapter > 2 or student.stage > 2 %}
+    <div class="iu-box box-203"></div>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% if student.chapter > 2 %}
+  <div class="iu-box box-204">
+    <div class="iu-text text-197">
+      <p>Ch.3</p>
+    </div>
+    {% if student.chapter > 3 or student.stage > 0 %}
+    <div class="iu-box box-205"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 9 %}
+    <div class="iu-box box-206"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 4 %}
+    <div class="iu-box box-207"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 5 %}
+    <div class="iu-box box-208"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 1 %}
+    <div class="iu-box box-209"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 8 %}
+    <div class="iu-box box-210"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 3 %}
+    <div class="iu-box box-211"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 6 %}
+    <div class="iu-box box-212"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 7 %}
+    <div class="iu-box box-213"></div>
+    {% endif %}
+    {% if student.chapter > 3 or student.stage > 2 %}
+    <div class="iu-box box-214"></div>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% if student.chapter > 3 %}
+  <div class="iu-box box-215">
+    <div class="iu-text text-208">
+      <p>Ch.4</p>
+    </div>
+    {% if student.chapter > 4 or student.stage > 0 %}
+    <div class="iu-box box-216"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 9 %}
+    <div class="iu-box box-217"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 4 %}
+    <div class="iu-box box-218"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 5 %}
+    <div class="iu-box box-219"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 1 %}
+    <div class="iu-box box-220"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 8 %}
+    <div class="iu-box box-221"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 3 %}
+    <div class="iu-box box-222"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 6 %}
+    <div class="iu-box box-223"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 7 %}
+    <div class="iu-box box-224"></div>
+    {% endif %}
+    {% if student.chapter > 4 or student.stage > 2 %}
+    <div class="iu-box box-225"></div>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% if student.chapter > 4 %}
+  <div class="iu-box box-226">
+    <div class="iu-text text-221">
+      <p>Ch.5</p>
+    </div>
+    {% if student.stage > 0 %}
+    <div class="iu-box box-227"></div>
+    {% endif %}
+    {% if student.stage > 9 %}
+    <div class="iu-box box-229"></div>
+    {% endif %}
+    {% if student.stage > 4 %}
+    <div class="iu-box box-228"></div>
+    {% endif %}
+    {% if student.stage > 5 %}
+    <div class="iu-box box-230"></div>
+    {% endif %}
+    {% if student.stage > 1 %}
+    <div class="iu-box box-231"></div>
+    {% endif %}
+    {% if student.stage > 8 %}
+    <div class="iu-box box-232"></div>
+    {% endif %}
+    {% if student.stage > 3 %}
+    <div class="iu-box box-233"></div>
+    {% endif %}
+    {% if student.stage > 6 %}
+    <div class="iu-box box-234"></div>
+    {% endif %}
+    {% if student.stage > 7 %}
+    <div class="iu-box box-235"></div>
+    {% endif %}
+    {% if student.stage > 2 %}
+    <div class="iu-box box-236"></div>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% if student.isAccount == True %}
+  <div class="iu-box box-237"></div>
+  {% endif %}
+  {% if student.isAccount == False %}
+  <div class="iu-box box-238"></div>
+  {% endif %}
 </div>

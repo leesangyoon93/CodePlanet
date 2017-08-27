@@ -22,6 +22,7 @@ class TimeStampedModel(models.Model):
 
 
 class Tbemailwhitelist(models.Model):
+    clidx = models.AutoField(db_column='clIdx', primary_key=True)
     clemail = models.CharField(db_column='clEmail', max_length=255)  # Field name made lowercase.
 
     class Meta:
@@ -75,9 +76,6 @@ class Tbuser(models.Model):
     claccount = models.CharField(db_column='clAccount', max_length=255, default="")  # Field name made lowercase.
     clpassword = models.CharField(db_column='clPassword', max_length=255, default="1234")  # Field name made lowercase.
     clrank = models.IntegerField(db_column='clRank', blank=True, null=True)  # Field name made lowercase.
-    clclassroom = models.IntegerField(db_column='clClassRoom', default=1)
-    clname = models.CharField(db_column='clName', default="Unnamed", max_length=255)
-    clinfo = models.TextField(db_column='clInfo', default="", max_length=255)
 
     class Meta:
         db_table = 'tbuser'
@@ -169,10 +167,10 @@ class ClassRoom(TimeStampedModel):
     className = models.CharField(max_length=255)
     classInfo = models.CharField(max_length=255)
     studentCount = models.IntegerField(default=0)
-#
-#
-# class Student(TimeStampedModel):
-#     classRoom = models.ForeignKey(ClassRoom)
-#     name = models.CharField(max_length=255)
-#     email = models.CharField(max_length=255)
-#     extraInfo = models.TextField(max_length=255)
+
+
+class Student(TimeStampedModel):
+    classRoom = models.ForeignKey(ClassRoom)
+    name = models.CharField(max_length=255)
+    email = models.CharField(max_length=255)
+    extraInfo = models.TextField(max_length=255)

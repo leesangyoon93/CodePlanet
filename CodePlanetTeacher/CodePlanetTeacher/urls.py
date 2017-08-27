@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 
 from mains.views import Signup, Login, CheckEmail, CreateClass, TeacherClass, DetailClassRoom, CreatedClassRoom, \
-    CreateStudent
+    CreateStudent, DetailStudent
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -35,5 +35,6 @@ urlpatterns = [
     url(r'^checkEmail', CheckEmail),
     url(r'^createClass', CreateClass),
     url(r'^createStudent', CreateStudent),
-    url(r'^detail_class', DetailClassRoom)
+    url(r'^detail_class', DetailClassRoom),
+    url(r'^detail_student', DetailStudent)
 ]
