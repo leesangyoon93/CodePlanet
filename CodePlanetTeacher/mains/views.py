@@ -72,7 +72,6 @@ def CreatedClassRoom(request):
     return render(request, 'pages/teacher_detail_class.html', {'classRoom': classRoom})
 
 
-# tbuser 에도 이 이메일로 계정이 생성되어 있는 학생만 뿌리기
 def DetailClassRoom(request):
     classRoom = ClassRoom.objects.get(id=request.GET.get('classRoomId'))
     students = Student.objects.filter(classRoom=classRoom.id).order_by('name')
@@ -92,6 +91,8 @@ def DetailClassRoom(request):
                            'name': studentList[idx].name, 'id': -1, 'number': idx + 1, 'isAccount': False}
                 data.append(tmpData)
 
+    print(data)
+
     return render(request, 'pages/teacher_detail_class_student_info.html',
                   {'students': data, 'classRoomId': classRoom.id})
 
@@ -100,6 +101,9 @@ def DetailClassRoom(request):
 def CreateStudent(request):
     try:
         classRoom = ClassRoom.objects.get(id=request.POST['classRoomId'])
+        classRoom.studentCount += 1
+        classRoom.save()
+
         student = Student.objects.create(classRoom=classRoom, name=request.POST['name'],
                                          extraInfo=request.POST['info'], email=request.POST['email'])
         student.save()
@@ -112,4 +116,10 @@ def CreateStudent(request):
 
 
 def DetailStudent(request):
-    return render(request, 'pages/teacher_detail_class_student_clicked.html')
+    classRoom = ClassRoom.objects.get(id=request.GET.get('classRoomId'))
+    user = Tbuser.objects.get(clid=request.GET.get('studentId'))
+    student = Student.objects.get(email=user.claccount)
+    log = Tbgamelog.objects.filter(clid=user.clid)
+    print(log)
+    return render(request, 'pages/teacher_detail_class_student_clicked.html',
+                  {'classRoomId': classRoom.id, 'student': student})

@@ -32,7 +32,7 @@
   height:60px;
   left:39px;
   top:30px;
-  width:167px;
+  width:178px;
 }
 .cell-48 > a {
   line-height:46px;
@@ -56,9 +56,79 @@
   font-size:14px;
   font-weight:400;
   height:32px;
-  left:187px;
+  left:227px;
   top:41px;
   width:167px;
+}
+.pg-radio-button {
+  height:32px;
+  left:224px;
+  top:158px;
+  width:24px;
+}
+.pg-radio-button-118 {
+  height:32px;
+  left:394px;
+  top:158px;
+  width:24px;
+}
+.cell-120 {
+  height:40px;
+  left:126px;
+  line-height:40px;
+  text-align:center;
+  top:156px;
+  width:100px;
+}
+.cell-121 {
+  height:40px;
+  left:291px;
+  line-height:40px;
+  text-align:center;
+  top:156px;
+  width:100px;
+}
+.pg-radio-button-121 {
+  height:32px;
+  left:560px;
+  top:155px;
+  width:24px;
+}
+.pg-radio-button-122 {
+  height:32px;
+  left:730px;
+  top:155px;
+  width:24px;
+}
+.cell-123 {
+  height:40px;
+  left:462px;
+  line-height:40px;
+  text-align:center;
+  top:153px;
+  width:100px;
+}
+.cell-124 {
+  height:40px;
+  left:627px;
+  line-height:40px;
+  text-align:center;
+  top:153px;
+  width:100px;
+}
+.pg-radio-button-125 {
+  height:32px;
+  left:899px;
+  top:152px;
+  width:24px;
+}
+.cell-126 {
+  height:40px;
+  left:796px;
+  line-height:40px;
+  text-align:center;
+  top:150px;
+  width:100px;
 }
 .footer {
   height:120px;
