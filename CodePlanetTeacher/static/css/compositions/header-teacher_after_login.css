@@ -10,9 +10,6 @@
   top:15px;
   width:100px;
 }
-.cell-61 > a {
-  line-height:40px;
-}
 .cell-61 {
   color:#FF6D00;
   font-family:'Roboto', sans-serif;
@@ -22,6 +19,9 @@
   text-align:center;
   top:16px;
   width:100px;
+}
+.cell-61 > a {
+  line-height:40px;
 }
 .cell-57 {
   color:#494949;

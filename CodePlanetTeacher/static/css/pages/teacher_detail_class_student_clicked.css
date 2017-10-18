@@ -34,9 +34,6 @@
   top:30px;
   width:178px;
 }
-.cell-48 > a {
-  line-height:46px;
-}
 .cell-48 {
   border-color:#DBDBDB;
   border-radius:50px;
@@ -46,6 +43,7 @@
   font-size:14px;
   height:46px;
   left:837px;
+  line-height:46px;
   text-align:center;
   top:26px;
   width:157px;
@@ -129,6 +127,50 @@
   text-align:center;
   top:150px;
   width:100px;
+}
+.collection {
+  float:none;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:209px;
+}
+.import {
+  height:254px;
+  width:196px;
+}
+.import-141 {
+  height:254px;
+  width:196px;
+}
+.import-142 {
+  height:254px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:196px;
+}
+.import-143 {
+  height:254px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:196px;
+}
+.import-144 {
+  height:254px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:196px;
+}
+.import-145 {
+  height:254px;
+  left:0px;
+  position:relative;
+  top:0px;
+  width:196px;
 }
 .footer {
   height:120px;

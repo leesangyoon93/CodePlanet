@@ -59,9 +59,6 @@
   top:232px;
   width:391px;
 }
-.cell-47 > a {
-  line-height:46px;
-}
 .cell-47 {
   background-color:#FFFFFF;
   border-color:#DBDBDB;
@@ -75,6 +72,9 @@
   text-align:center;
   top:364px;
   width:158px;
+}
+.cell-47 > a {
+  line-height:46px;
 }
 .box-29 {
   background-color:#DCFFF8;

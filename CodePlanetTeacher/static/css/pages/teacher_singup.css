@@ -100,9 +100,6 @@
   top:444px;
   width:111px;
 }
-.cell-29 > a {
-  line-height:40px;
-}
 .cell-29 {
   color:#494949;
   font-family:'Jeju Gothic', serif;
@@ -112,6 +109,9 @@
   text-align:center;
   top:439px;
   width:147px;
+}
+.cell-29 > a {
+  line-height:40px;
 }
 .pg-text-field-29 {
   background-color:#FFFFFF;

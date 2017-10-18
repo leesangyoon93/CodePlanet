@@ -91,8 +91,6 @@ def DetailClassRoom(request):
                            'name': studentList[idx].name, 'id': -1, 'number': idx + 1, 'isAccount': False}
                 data.append(tmpData)
 
-    print(data)
-
     return render(request, 'pages/teacher_detail_class_student_info.html',
                   {'students': data, 'classRoomId': classRoom.id})
 
@@ -118,8 +116,8 @@ def CreateStudent(request):
 def DetailStudent(request):
     classRoom = ClassRoom.objects.get(id=request.GET.get('classRoomId'))
     user = Tbuser.objects.get(clid=request.GET.get('studentId'))
+    info = Tbgameinfo.objects.get(clid=user.clid)
     student = Student.objects.get(email=user.claccount)
-    log = Tbgamelog.objects.filter(clid=user.clid)
-    print(log)
+    logs = Tbgamelog.objects.filter(clid=user.clid, clchapter=request.GET.get('chapter'))
     return render(request, 'pages/teacher_detail_class_student_clicked.html',
-                  {'classRoomId': classRoom.id, 'student': student})
+                  {'classRoomId': classRoom.id, 'student': student, 'info': info, 'logs': list(logs)})

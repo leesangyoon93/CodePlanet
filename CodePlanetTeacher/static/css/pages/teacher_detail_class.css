@@ -82,9 +82,6 @@
   top:398px;
   width:112px;
 }
-.cell-47 > a {
-  line-height:46px;
-}
 .cell-47 {
   border-color:#DBDBDB;
   border-radius:50px;
@@ -98,7 +95,7 @@
   top:80px;
   width:157px;
 }
-.cell-48 > a {
+.cell-47 > a {
   line-height:46px;
 }
 .cell-48 {
@@ -113,6 +110,9 @@
   text-align:center;
   top:139px;
   width:157px;
+}
+.cell-48 > a {
+  line-height:46px;
 }
 .footer {
   height:120px;

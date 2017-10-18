@@ -11,9 +11,6 @@
   top:15px;
   width:100px;
 }
-.cell-18 > a {
-  line-height:40px;
-}
 .cell-18 {
   -webkit-transition:color 0.3s;
   color:#929292;
@@ -25,6 +22,9 @@
   top:16px;
   transition:color 0.3s;
   width:100px;
+}
+.cell-18 > a {
+  line-height:40px;
 }
 .cell-18.iux-hover, .cell-18.iux-active {
   color:#7AD6C9;
@@ -41,11 +41,11 @@
   transition:color 0.3s;
   width:100px;
 }
-.cell.iux-hover, .cell.iux-active {
-  color:#7AD6C9;
-}
 .cell > a {
   line-height:40px;
+}
+.cell.iux-hover, .cell.iux-active {
+  color:#7AD6C9;
 }
 .cell-21 {
   color:#494949;
@@ -79,11 +79,11 @@
   transition:color 0.3s;
   width:100px;
 }
-.cell-19.iux-hover, .cell-19.iux-active {
-  color:#7AD6C9;
-}
 .cell-19 > a {
   line-height:40px;
+}
+.cell-19.iux-hover, .cell-19.iux-active {
+  color:#7AD6C9;
 }
 .cell-25 {
   color:#494949;
@@ -94,9 +94,6 @@
   text-align:center;
   top:14px;
   width:62px;
-}
-.cell-20 > a {
-  line-height:40px;
 }
 .cell-20 {
   -webkit-transition:color 0.3s;
@@ -109,6 +106,9 @@
   top:15px;
   transition:color 0.3s;
   width:100px;
+}
+.cell-20 > a {
+  line-height:40px;
 }
 .cell-20.iux-hover, .cell-20.iux-active {
   color:#7AD6C9;

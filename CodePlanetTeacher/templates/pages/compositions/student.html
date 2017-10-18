@@ -1,13 +1,13 @@
 <div class="iu-box box-185">
-  <input class="iu-pg-check-box pg-check-box-189" value={{ student.id }} type="checkbox" name="studentCheck">
+  <input class="iu-pg-check-box pg-check-box-189" value={{ student.number }} type="checkbox" name="studentCheck">
   <div class="iu-text text-188">
     <p>{{student.number}}</p>
   </div>
   <div class="iu-text text-187">
     <p>{{student.name}}</p>
   </div>
-  {% if student.isAccount == True %}
-  <div class="iu-text btn_detail_student text-190" id = {{ student.id }}>
+  {% if student.isAccount == True and student.chapter > 0 %}
+  <div class="iu-text btn_detail_student btn text-190" id = {{ student.id }}>
     <p>상세보기</p>
   </div>
   {% endif %}

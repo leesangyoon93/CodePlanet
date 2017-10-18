@@ -9,13 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/common/iu.css">
     <link rel="stylesheet" type="text/css" href="/static/css/pages/teacher_detail_class_student_clicked.css">
+    <link rel="stylesheet" type="text/css" href="/static/project/main.css">
     <link rel="stylesheet" type="text/css" href="/static/css/compositions/header.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compositions/detail_student_info.css">
     <link rel="stylesheet" type="text/css" href="/static/css/compositions/footer.css">
     <link href='https://fonts.googleapis.com/earlyaccess/hanna.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="//cdn.iueditor.org/js/iueditor-2.1.js"></script>
     <script type="text/javascript">window.IUEditor || document.write('<script src="//s3.iueditor.org/js/iueditor-2.1.js">\x3C/script>')</script>
-    <script type="text/javascript" src="/static/project/students.js"></script>
+    <script type="text/javascript" src="/static/project/student_detail.js"></script>
     <!--[if lt IE 9]>
       <script>
         document.createElement("header" );
@@ -42,33 +44,58 @@
             <div class="iu-text text-39">
               <p>수업 {{ classRoomId }}_{{student.name}}</p>
             </div>
-            <div class="iu-cell btn_show_all_student cell-48">
-              <a class="iux-inner-link" href="/teacher_class">
-                <p>전체 학생 보기</p>
-              </a>
+            <div class="iu-cell btn_show_all_student btn cell-48">
+              <p>전체 학생 보기</p>
             </div>
             <div class="iu-text text-48">
               <p>기타 학생 정보</p>
             </div>
-            <input class="iu-pg-radio-button pg-radio-button" type="radio" name="radio_chapter" value="1">
+            {% if info.clchapter > 0 %}
+            <input class="iu-pg-radio-button pg-radio-button" checked type="radio" name="radio_chapter" value="1">
+            {% endif %}
+            {% if info.clchapter > 1 %}
             <input class="iu-pg-radio-button pg-radio-button-118" type="radio" name="radio_chapter" value="2">
+            {% endif %}
+            {% if info.clchapter > 0 %}
             <div class="iu-cell cell-120">
               <p>Chapter 1</p>
             </div>
+            {% endif %}
+            {% if info.clchapter > 1 %}
             <div class="iu-cell cell-121">
               <p>Chapter 2</p>
             </div>
+            {% endif %}
+            {% if info.clchapter > 2 %}
             <input class="iu-pg-radio-button pg-radio-button-121" type="radio" name="radio_chapter" value="3">
+            {% endif %}
+            {% if info.clchapter > 3 %}
             <input class="iu-pg-radio-button pg-radio-button-122" type="radio" name="radio_chapter" value="4">
+            {% endif %}
+            {% if info.clchapter > 2 %}
             <div class="iu-cell cell-123">
               <p>Chapter 3</p>
             </div>
+            {% endif %}
+            {% if info.clchapter > 3 %}
             <div class="iu-cell cell-124">
               <p>Chapter 4</p>
             </div>
+            {% endif %}
+            {% if info.clchapter > 4 %}
             <input class="iu-pg-radio-button pg-radio-button-125" type="radio" name="radio_chapter" value="5">
+            {% endif %}
+            {% if info.clchapter > 4 %}
             <div class="iu-cell cell-126">
               <p>Chapter 5</p>
+            </div>
+            {% endif %}
+            <div class="iu-collection collection">
+              {% for log in logs %}
+                <div class="iu-import import">
+                  {% include './compositions/detail_student_info.html' %}
+                </div>
+              {% endfor %}
             </div>
           </div>
         </section>

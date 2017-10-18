@@ -59,9 +59,6 @@
   top:83px;
   width:563px;
 }
-.cell-48 > a {
-  line-height:45px;
-}
 .cell-48 {
   border-color:#DBDBDB;
   border-radius:50px;
@@ -74,6 +71,9 @@
   text-align:center;
   top:73px;
   width:126px;
+}
+.cell-48 > a {
+  line-height:45px;
 }
 .collection {
   float:none;
