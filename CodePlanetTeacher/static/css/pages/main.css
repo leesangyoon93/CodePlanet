@@ -25,88 +25,98 @@
   background-color:#FFFFFF;
 }
 .section {
-  height:1500px;
+  height:1400px;
 }
-.box-26 {
-  background-color:#FFE7D4;
-  height:500px;
+.box-133 {
+  background-image:url('/static/project/KakaoTalk_2017-11-15-17-53-09_Photo_92.png');
+  background-position:center center;
+  background-size:100% 100%;
+  height:1330px;
   left:0px;
   margin-left:auto;
   margin-right:auto;
   right:0px;
-  top:1001px;
-  width:1024px;
-}
-.movie {
-  height:290px;
-  left:498px;
-  top:105px;
-  width:513px;
-}
-.text-29 {
-  font-family:'Jeju Gothic', serif;
-  font-size:15px;
-  height:413px;
-  left:34px;
-  top:112px;
-  width:474px;
-}
-.box {
-  background-color:#FFFFFF;
-  height:448px;
-  left:0px;
-  top:554px;
-  width:1024px;
-}
-.image-67 {
-  background-color:#B6B6B6;
-  height:140%;
-  left:0px;
-  top:0px;
+  top:70px;
   width:100%;
-}
-.box-69 {
-  background:linear-gradient(to right, rgba(255,255,255,0.49) 51%, rgba(182,182,182,1.00));
-  background:-webkit-linear-gradient(left, rgba(255,255,255,0.49) 51%, rgba(182,182,182,1.00));
-  height:100%;
-  left:0px;
-  top:0px;
-  width:100%;
-}
-.image-28 {
-  height:52px;
-  left:410px;
-  top:291px;
-  width:170px;
 }
 .text-26 {
-  color:#000000;
-  font-family:'Hanna', serif;
+  color:#FFFFFF;
+  font-family:'Jeju Gothic', serif;
   font-size:21px;
   font-weight:300;
   height:111px;
-  left:109px;
-  text-align:center;
-  top:130px;
-  width:792px;
-}
-.box-68 {
-  height:100px;
-  left:0px;
-  top:0px;
-  width:100px;
-}
-.image {
-  height:500px;
   left:0px;
   margin-left:auto;
   margin-right:auto;
   right:0px;
-  top:56px;
-  width:1024px;
+  text-align:center;
+  top:60px;
+  width:792px;
 }
-.image.iux-hover, .image.iux-active {
+.image-28 {
+  height:44px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:198px;
+  width:145px;
+}
+.movie {
+  height:223px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  top:299px;
+  width:458px;
+}
+.text-129 {
+  color:#FFFFFF;
+  font-family:'Jeju Gothic', serif;
+  font-size:21px;
+  font-weight:300;
+  height:146px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:center;
+  top:582px;
+  width:792px;
+}
+.text-130 {
   color:#000000;
+  font-family:'Jeju Gothic', serif;
+  font-size:15px;
+  font-weight:300;
+  height:193px;
+  left:0px;
+  line-height:2;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  text-align:left;
+  top:750px;
+  width:589px;
+}
+.floating-image {
+  background-image:url('/static/project/KakaoTalk_2017-11-15-18-11-36_Photo_81.png');
+  background-position:center center;
+  background-size:contain;
+  height:370px;
+  left:481px;
+  top:996px;
+  width:370px;
+}
+.floating-image-133 {
+  background-image:url('/static/project/KakaoTalk_2017-11-15-18-11-38_Photo_16.png');
+  background-position:center center;
+  background-size:contain;
+  height:156px;
+  left:245px;
+  top:87.60%;
+  width:156px;
 }
 .footer {
   height:120px;
